@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="scheduleModule" lang="pt-br">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Agendamento Online</title>
+    <link rel="stylesheet" href="js/app/assets/libs/materialize/materialize.css">
+    <link rel="stylesheet" href="js/app/assets/dist/css/style.css">
+    <link rel="stylesheet" href="js/app/assets/dist/css/config.css">
+    <link rel="stylesheet" href="js/app/assets/libs/angular/materialize-stepper.min.css">
+    <link rel="stylesheet" href="js/app/assets/dist/css/custom.css">
+
+    <link href="js/app/assets/dist/images/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="fundo-principal">
+
+    <ng-view></ng-view>
+
+    <!--Libs-->
+    <script src="js/app/assets/libs/angular/angular.min.js"></script>
+    <script src="js/app/assets/libs/angular/angular-route.min.js"></script>
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/app/assets/libs/jquery/jquery-3.2.1.min.js"></script>
+    <!--materialize js-->
+    <script src="js/app/assets/libs/materialize/materialize.js"></script>
+
+    <script type="text/javascript" src="js/app/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/app/assets/plugins/plugins.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <!--Import Materialize-Stepper JavaScript (after the jquery.validate.js and materialize.js) -->
+    <script src="js/app/assets/libs/angular/materialize-stepper.min.js"></script>
+
+    <!--Fim Libs-->
+
+    <!--Módulo Principal-->
+    <script src="js/app/app.module.js"></script>
+    <!--Fim Principal-->
+
+    <!--Services-->
+    <script src="js/app/services/interceptor.service.js"></script>
+    <!--FimServices-->
+
+    <!--Diretivas-->
+    <script src="js/app/directivies/navbar.directivie.js"></script>
+    <!--FIm Diretivas-->
+
+    <!--Controller -->
+    <script src="js/app/controllers/home.controller.js"></script>
+    <script src="js/app/controllers/register-user.controller.js"></script>
+    <script src="js/app/controllers/login-user.controller.js"></script>
+    <script src="js/app/controllers/online-schedule.controller.js"></script>
+    <!--Fim Controller -->
+
+    <!--Controller -->
+    <script src="js/app/validations/validationDate.js"></script>
+    <script src="js/app/validations/validationCPF.js"></script>
+    <!--Fim Controller -->
+
+
+</body>
+
+</html>

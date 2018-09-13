@@ -1,0 +1,68 @@
+<!--login start here-->
+
+<!-- <img class="logo-login" src="js/app/assets/dist/images/logoDocs.png"> -->
+<div class="line"></div>
+<div class="login">
+    <br/>
+    <img class="logo-login" src="js/app/assets/dist/images/logoDocs.png">
+    <!-- <img class="login-image" src="js/app/assets/dist/images/password.png" title="Médico" alt="Médico"> -->
+</div>
+<div class="row">
+    <div class="col s12 m12 l12">
+        <div class="col s12 m3 l3">
+            
+        </div>
+        <div class="card-panel col s12 m6 l6">
+            <h4 class="header2 center">Cadastrar novo usuário</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row sem-margem">
+                        <div class="input-field col s12">
+                            <input id="nomeCompleto" type="text">
+                            <label for="nomeCompleto">Nome Completo</label>
+                        </div>
+                    </div>
+                    <div class="row sem-margem">
+                        <div class="input-field col s6">
+                            <input type="text" name="outra_data" id="outra_data" maxlength="10" onkeypress="mascaraData(this)" />
+                            <label for="dataNascimento">Data de Nascimento</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" id="RegraValida" maxlength="14" value="" name="RegraValida" onkeydown="javascript: fMasc( this, mCPF );">
+                            <label for="cpf">CPF</label>
+                        </div>
+                    </div>
+                    <div class="row sem-margem">
+                        <div class="input-field col s12">
+                            <input id="email" type="email">
+                            <label for="email">E-mail</label>
+                        </div>
+
+                    </div>
+                    <div class="row sem-margem">
+                        <div class="input-field col s6">
+                            <input id="password6" type="password">
+                            <label for="password">Senha</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="password6" type="password">
+                            <label for="password">Confirmar senha</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <a href="/onlineSchedule" class="btn waves-effect waves-light right" type="submit" name="action">Cadastrar
+                                <i class="material-icons right">send</i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Desenvolvido por
+        <a href="http://spacenapse.com/" target="_blank"> Spacenapse </a>
+    </p>
+</div>

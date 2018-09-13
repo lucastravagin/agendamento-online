@@ -1,0 +1,101 @@
+.fundo-principal {
+    background-color: #ebf2fa;
+}
+.logo-login {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.line {
+    background-color: #3177bd;
+    height: 24px;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+.card-panel {
+    border-top: solid #3177bd 4px;
+}
+
+
+.copyright {
+    text-align: center;
+    color: #fff
+}
+.copyright a {
+    color: #fff
+}
+
+.card-login {
+    margin-top: 20px;
+}
+
+.col.grid-dia {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: #3177bd;
+    color: white;
+    padding: 0
+}
+.col.grid-dia:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.col.grid-horario {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    background-color: #3177bd;
+    color: white;
+    padding: 0
+}
+.col.grid-horario:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col.grid-horario:visited {
+    background-color: #ff0000;
+}
+.nav-wrapper {
+    background-color: #ebf2fa;
+}
+
+.img-logo {
+    width: 150px;
+    height: 70px;
+}
+
+nav ul a {
+    color: #0033a0;
+}
+
+.btn {
+    background-color: #0033a0;
+}
+.btn:hover {
+    background-color: #3177bd;
+}
+.selecionado {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: #ff0000;
+    color: white;
+    padding: 0
+}
+@media only screen and (max-width: 992px) {
+    
+.img-logo {
+    width: 120px;
+    height: 60px;
+}
+}

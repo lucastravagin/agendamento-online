@@ -1,0 +1,214 @@
+<!--login start here-->
+
+<!-- <img class="logo-login" src="js/app/assets/dist/images/logoDocs.png"> -->
+
+
+<!-- <img class="login-image" src="js/app/assets/dist/images/password.png" title="Médico" alt="Médico"> -->
+
+<nav>
+    <div class="nav-wrapper">
+        <img src="js/app/assets/dist/images/logoDocs.png" class="brand-logo img-logo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a>Seja bem vindo(a): Fábio Bortolotti</a>
+            </li>
+            <li>
+                <a href="badges.html">Agendamentos</a>
+            </li>
+            <li>
+                <a href="collapsible.html">Sair</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="stepper vertical">
+    <li class="step active">
+        <div class="step-title waves-effect">Opções</div>
+        <div class="step-content">
+            <div class="card-panel">
+                <h4 class="header2 center">Opções</h4>
+                <div class="row">
+                    <select class="col s12 m4 l4">
+                        <option value="" disabled selected>Selecione a Unidade</option>
+                        <option value="1">Osasco</option>
+                        <option value="2">Pirituba</option>
+                        <option value="3">Tatuapé</option>
+                    </select>
+                    <select class="col s12 m4 l4">
+                        <option value="" disabled selected>Selecione a especialidade</option>
+                        <option value="1">Cardiologista</option>
+                        <option value="2">Dermatologista</option>
+                        <option value="3">Nutricionista</option>
+                    </select>
+                    <select class="col s12 m4 l4">
+                        <option value="" disabled selected>Selecione o convênio</option>
+                        <option value="1">Ameplan</option>
+                        <option value="2">Biovida</option>
+                        <option value="3">Trasmontano</option>
+                    </select>
+                </div>
+            </div>
+            <div class="step-actions">
+                <button class="waves-effect waves-dark btn next-step">Continuar</button>
+            </div>
+        </div>
+    </li>
+    <li class="step">
+
+        <div class="step-title waves-effect">Escolha o Médico</div>
+        <div class="step-content">
+            <div class="card-panel">
+
+                <h4 class="header2 center">Médicos Disponíveis para esta Especialidade</h4>
+                <div class="row">
+                    <form class="col s12">
+                        <ul id="issues-collection" class="collection z-depth-1">
+                            <li class="collection-item">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <p class="collections-title">
+                                            Drº Afonso Silveira Lustre</p>
+                                    </div>
+                                    <div class="col s5">
+                                        <span class="">Médico só atende pacientes acima de 12 anos</span>
+                                    </div>
+                                    <div class="col s3">
+                                        <button class="btn next-step">Agendar</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <p class="collections-title">
+                                            Drª Maria Lourdes </p>
+                                    </div>
+                                    <div class="col s5">
+                                        <span class="">Médica só atende pacientes acima de 14 anos</span>
+                                    </div>
+                                    <div class="col s3">
+                                        <button class="btn next-step">Agendar</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <p class="collections-title">
+                                            Drº Paulo Eduardo</p>
+                                    </div>
+                                    <div class="col s5">
+                                        <span class="">Atende qualquer idade</span>
+                                    </div>
+                                    <div class="col s3">
+                                        <button class="btn next-step">Agendar</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <p class="collections-title">
+                                            Drª Caroline Hespanhol</p>
+                                    </div>
+                                    <div class="col s5">
+                                        <span class="">Atende todas as idades</span>
+                                    </div>
+                                    <div class="col s3">
+                                        <button class="btn next-step">Agendar</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </form>
+                </div>
+            </div>
+            <div class="step-actions">
+                <button class="waves-effect waves-dark btn previous-step">Voltar</button>
+            </div>
+        </div>
+    </li>
+    <li class="step">
+        <div class="step-title waves-effect">Escolha a melhor data para a sua consulta</div>
+        <div class="step-content">
+            <div class="col s12 m12 l6">
+                <div class="card-panel">
+
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">calendar_today</i>Escolha o mês da consulta</div>
+                            <div class="collapsible-body">
+                                <select class="col s12 m4 l4">
+                                    <option value="1">Julho/2018</option>
+                                    <option value="2">Agosto/2018</option>
+                                    <option value="3">Setembro/2018</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">today</i>Escolha o dia da consulta</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">1</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">2</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">3</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">4</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">5</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">6</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">7</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">8</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">9</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">10</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">11</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">12</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">13</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">14</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">15</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">16</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">17</div>
+                                    <div ng-click="selecionado()" class="col s2 m1 l1 grid-dia">18</div>
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">alarm</i>Escolha o horário da consulta</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                
+                                    <div class="col s4 m2 l2 grid-horario">08:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">09:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">10:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">11:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">12:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">13:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">14:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">15:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">16:00</div>
+                                    <div class="col s4 m2 l2 grid-horario">17:00</div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+                    <div class="row">
+                        <button class="btn right">Confirmar Agendamento</button>
+                    </div>
+                </div>
+                <div class="step-actions">
+                    <button class="waves-effect waves-dark btn previous-step">Voltar</button>
+                </div>
+            </div>
+
+        </div>
+    </li>
+</ul>

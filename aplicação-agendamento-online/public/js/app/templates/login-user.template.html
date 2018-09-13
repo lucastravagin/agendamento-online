@@ -1,0 +1,74 @@
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
+<div class="line"></div>
+<div id="login-page" class="row">
+  <div class="col s12">
+    <div class="col s12 m5 l5">
+
+    </div>
+    <div class="z-depth-4 card-panel card-login col s12 m3 l3">
+      <form class="login-form">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <img src="js/app/assets/dist/images/logoDocs.png" alt="Logo da Docs Saúde" class="">
+            <p class="center login-form-text">Agendamento Online</p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix pt-5">person_outline</i>
+            <input id="username" type="text">
+            <label for="username" class="center-align">E-mail ou CPF</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix pt-5">lock_outline</i>
+            <input id="password" type="password">
+            <label for="password">Senha</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m12 l12 ml-2 mt-3">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Lembre-me</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="/onlineSchedule" class="btn waves-effect waves-light col s12">Entrar</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 m6 l6">
+            <p class="margin medium-small">
+              <a href="/registerUser">Crie uma conta!</a>
+            </p>
+          </div>
+          <div class="input-field col s6 m6 l6">
+            <p class="margin right-align medium-small">
+              <a class="modal-trigger" href="#modal1">Esqueceu sua senha ?</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4 class="center">Recuperar senha</h4>
+    <p class="center">Esqueceu sua senha? Não se preocupe.
+      É só digitar o seu e-mail e te enviaremos
+      as instruções para você definir uma nova senha</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn">Enviar</a>
+  </div>
+</div>
